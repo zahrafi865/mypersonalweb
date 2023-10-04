@@ -18,7 +18,7 @@ nav {
     align-items: center;
     height: 9%;
     width: 100%;
-    margin-top: 5px;
+    margin-top: 0px;
     font-weight: bold;
 }
 
@@ -34,18 +34,26 @@ nav ul li {
     font-size: 20px;
 }
 
-nav ul li .active {
-    font-weight: bold;
-}
-
 .nav-left {
     flex: 70%;
+}
+
+nav ul li a {
+    color: black;
+    background-color: white;
+    border-radius: 8px;
+    padding: 7px;
+}
+
+nav ul li a:hover {
+    color: purple;
 }
 
 .nav-right {
     flex: 30%;
     text-align: end;
     margin-right: 50px;
+    color: white;
 }
 
 .nav-right a {
@@ -53,6 +61,10 @@ nav ul li .active {
     color: white;
     border-radius: 8px;
     padding: 7px;
+}
+
+.nav-right a:hover {
+    color: purple;
 }
 
 form {
