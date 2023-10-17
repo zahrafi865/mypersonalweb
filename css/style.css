@@ -1,0 +1,272 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+* {
+    text-decoration:none;
+    font-family: 'Inter', sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #d3d3d3;
+}
+
+nav {
+    background-color: white;
+    color:black;
+    display: flex;
+    align-items: center;
+    height: 9%;
+    width: 100%;
+    margin-top: 0px;
+    font-weight: bold;
+}
+
+nav ul {
+    display: flex;
+    list-style-type: none;
+    align-items: center;
+    margin-left: 40px;
+}
+
+nav ul li {
+    margin-right: 25px;
+    font-size: 20px;
+}
+
+.nav-left {
+    flex: 70%;
+}
+
+nav ul li a {
+    color: black;
+    background-color: white;
+    border-radius: 8px;
+    padding: 7px;
+}
+
+nav ul li a:hover {
+    color: purple;
+}
+
+.nav-right {
+    flex: 30%;
+    text-align: end;
+    margin-right: 50px;
+    color: white;
+}
+
+.nav-right a {
+    background-color: black;
+    color: white;
+    border-radius: 8px;
+    padding: 7px;
+}
+
+.nav-right a:hover {
+    color: purple;
+}
+
+.content {
+    display: flex;
+    margin: 50px auto;
+    width: 900px;
+    padding: 40px;
+    box-shadow: 0px 10px 20px grey;
+    border-radius: 10px;
+    background-color: white;
+}
+
+.container {
+    margin-right: 40px;
+}
+
+.container .introduction {
+    text-align: justify;
+}
+
+.buttons {
+    margin-top: 20px;
+}
+
+.container .contact-button {
+    background-color: black;
+    padding: 5px 15px;
+    margin-right: 20px;
+    color: white;
+    border-radius: 15px;
+    font-size: 15px;
+    text-decoration: none;
+}
+
+.container .contact-button:hover {
+    background-color: purple;
+}
+
+.container .download-cv {
+    color: black;
+    text-decoration: none;
+}
+
+.container .download-cv:hover {
+    color: purple;
+}
+
+.container .social-media {
+    margin-top: 30px;
+}
+
+.social-media a i{
+    font-size: 35px;
+    margin-right: 20px;
+    color: black;
+}
+
+.social-media a i:hover{
+    color: purple;
+}
+
+.social-media i {
+    margin-right: 20px;
+    margin-top: 30px;
+    font-size: 30px;
+    color:black;
+}
+
+.card-photo {
+    background-color: #F7F7F7;
+    width: 300px;
+    height: fit-content;
+    margin: 40px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px #cecece;
+    text-align: center;
+}
+
+.card-photo img {
+    width: 300px;
+    height: auto;
+    margin-bottom: 10px;
+    border-radius: 10px;
+} 
+
+/* My Projects */
+.my-project {
+    background-color: #f4f3f3;
+    height: 150vh;
+    padding-top: 40px;
+}
+
+.my-project h1 {
+    text-align: center;
+}
+
+.my-project .projects-container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 90%;
+    height: 500px;
+    margin: 0 auto;
+}
+
+/* Projects Content */
+.project-content {
+    margin: 20px;
+    width: 400px;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.project-content img, 
+.project-content p,
+.project-content div
+{
+    width: 90%;
+    margin: 8px auto;
+}
+
+.project-content img {
+    border-radius: 10px;
+}
+
+.project-content h3 {
+    width: 90%;
+    margin: 8px auto;
+}
+
+.project-content h4 {
+    width: 90%;
+    margin: 1px auto;
+    color: #969494;
+}
+
+.project-content .buttons {
+    display: flex;
+    justify-content: center;
+}
+
+.project-content .buttons button {
+    background-color: black;
+    color: #fff;
+    margin: 0 5px;
+    width: 200px;
+    height: 30px;
+    border-radius: 6px;
+}
+
+.my-project .projects-container .icon img {
+    width: 35px;
+    margin: 0 5px;
+}
+
+.my-project .projects-container .project-content .time p {
+    margin: 1px;
+    color: #969494;
+}
+
+@media only screen and (max-width: 550px) {
+    form {
+        margin: 0 auto;
+        width: 300px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 50px;
+    }
+
+    form .project-date {
+        display: flex;
+        flex-direction: column;
+    }
+
+
+    form .project-date .start-date-input input,
+    form .project-date .end-date-input input
+    {
+        width: 100%;
+        height: 40px;
+        border-radius: 5px;
+        border: none;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    form .tech .tech-input {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .project-content {
+        margin: 20px;
+        width: 300px;
+        background-color: #fff;
+        display: flex;
+        flex-direction: column;
+        border-radius: 10px;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    }
+
+}

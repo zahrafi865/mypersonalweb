@@ -1,0 +1,95 @@
+<html>
+    <head>
+        <title>Personal Web</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.7.7/handlebars.min.js"></script>
+    </head>
+
+    <body>
+        <!-- NAVBAR -->
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container me-5">
+                <a class="navbar-brand" href="index.hbs">
+                    <img src="/images/logo.png" alt="logo">
+                </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="index.hbs">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="myproject.hbs">Add Project</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="testimonial.hbs">Testimonial</a>
+                        </li>
+                        </ul>
+                <div class="d-flex"> 
+                    <a class="btn btn-danger" href="contact.hbs">Contact Me</a>
+                </div>
+              </div>
+            </div>
+          </nav>
+
+        <div class="container mx-auto my-5 rounded-3 bg-white shadow p-5">
+            <div class="row">
+                <div class="col-md-7 px-2">
+                    <h1 class="fw-bold">Hi, Welcome to My Website</h1>
+                    <p class="my-4"> Halo semua, perkenalkan nama saya Zahra Fitri Imani. Saya berasal dari Kota Tangerang. Saya ingin menjadi Fullstack Developer. Keinginan saya untuk belajar dan berkembang dalam dunia IT, bersama dengan tekad untuk memberikan kontribusi positif, adalah motivasi utama saya untuk mengikuti bootcamp ini.
+                    </p>
+
+                    <div class="buttons">
+                        <a class="text-decoration-none" >
+                            <button class="bg-black px-4 py-1 me-3 mb-3 rounded-4 text-white"><a href="contact.hbs">Contact</button>
+                        </a>
+                        <a class="text-decoration-none text-black">
+                            <a href="#">Download CV</a>
+                            <a href="#"><i class="fa-solid fa-download"></i></a>
+                        </a>
+                    </div>
+
+                    <div class="social-media my-2 p-3">
+                        <a class="text-dark fs-1" href="https://www.linkedin.com/"><i class="fa-brands fa-linkedin"></i></a> 
+                        <a class="text-dark fs-1 ms-2" href="https://www.instagram.com/"><i class="fa-brands fa-square-instagram"></i></a> 
+                        <a class="text-dark fs-1 ms-2" href="https://www.facebook.com/"><i class="fa-brands fa-facebook"></i></a> 
+                        <a class="text-dark fs-1 ms-2" href="https://twitter.com/"><i class="fa-brands fa-square-twitter"></i></a> 
+                    </div>
+
+                </div>
+                <div class="col-md-1"></div>
+                <div class="col-md-4 p-0 shadow rounded-3 ">
+                    <img class="rounded-top-3 w-50 h-auto" src="/images/hijab.png">
+                    <p class="text-center fs-2 my-3"><b>Zahra Fitri Imani</b></p>
+                    <p class="text-center mb-4">Program Fullstack Developer</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="d-flex justify-content-center" >
+            <div class="card" style="width: 18rem;">
+                <img src="/assets/txt.jpg" class="card-img-top" alt="blue-hour">
+                <div class="card-body">
+                <h5 class="card-title">Website Blue Hour</h5>
+                <p style="font-size: 11px;" class=" fw-lighter">12 Oktober 2023</p>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <div class="icon">
+                    <img src="/assets/nodejs.png" alt="">
+                    <img src="/assets/nextjs.png" alt="">
+                    <img src="/assets/reactjs.png" alt="">
+                    <img src="/assets/typescript.png" alt="">
+                </div>
+                <div class="d-flex justify-content-center pt-3">
+                    <button class="px-5 bg-black text-white fw-bold rounded-3" type="button" class="btn btn-dark">Hapus</button>
+                    <button class="px-5 ms-2 bg-black text-white fw-bold rounded-3" type="button" class="btn btn-dark">Edit</button>
+                </div>
+            </div>
+        </div>
+        
+        <script src="/js/myproject.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    </body>
+    </html>
